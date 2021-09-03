@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tailwind Template</title>
+    <meta name="description" content="Tailwind Template" />
+    <meta name="author" content="Ardi Axhami" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js"defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.0.0/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      @import url('http://fonts.cdnfonts.com/css/helveticaneuecyr-2');
+      *{
+        font-family: 'HelveticaNeueCyr', sans-serif;
+
+      }
+      </style>
+
+
+  </head>
+  <body class=" bg-[#18191B]">
+    <div x-data="{ open: false }" class="xl:px-40 flex flex-col mx-auto md:items-center md:justify-between md:flex-row ">
+      <div class="p-4 flex flex-row items-center justify-between">
+        <svg class="h-12 w-auto" viewBox="0 0 71 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect width="71" height="50" fill="url(#pattern0)"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0" transform="translate(0 -0.00117647) scale(0.00980392 0.0139216)"/></pattern><image id="image0" width="102" height="72" xlink:href="data:image/png;base64,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"/></defs></svg>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+          <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 text-white">
+            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      <nav :class="{'flex': open, 'hidden': !open}" class="flex-col  flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row xl:space-x-12 z-10 text-[#ECEFF3]">
+        <a class="px-4 py-2 mt-2 text-sm  bg-transparent  focus:outline-none focus:shadow-outline " href="#">Lebensraume</a>
+        <a class="px-4 py-2 mt-2 text-sm  bg-transparent  focus:outline-none focus:shadow-outline " href="#">Ablauf</a>
+        <a class="px-4 py-2 mt-2 text-sm  bg-transparent  focus:outline-none focus:shadow-outline " href="#">Über uns</a>
+        <a class="px-4 py-2 mt-2 text-sm  bg-transparent  focus:outline-none focus:shadow-outline " href="#">Kontakt</a>
+      </nav>
+    </div>
+    <div class="flex flex-row  space-x-20 z-[-1] absolute">
+        <div class="h-[550px] w-[1050px] " style="box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);border-radius:20px;">
+          <div class="px-4 xl:px-40 mt-8">
+            <h1 class="title-font  font-medium text-[20px] md:text-[24px] text-[#C4C4C4]">Ihre individuelle Inneneinrichtung
+            </h1>
+            <h1 class="font-semibold text-[#BA8C4B] text-[26px] md:text-[52px]">Stilvolle massgeschneiderte
+              <br class="inline-block" />Möbel vom tischler
+            </h1>
+              <div class="flex flex-col text-[#6C757D] text-[14px] md:text-[20px] ">
+                <p class="">Lassen Sie mit Möbeln, die Ihnen gefallen, ein Traum vom</p>
+                <p class="">Heulen wahr werden. Wir planen, visualisieren und</p>
+                <p class="">realisieren Ihre Inneneinrichtung millimetergenau.</p>
+              </div>
+          </div>
+        </div>
+        <div class="h-[827px] w-[688px] -mt-32 hidden 2xl:flex" style="box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);border-radius:20px;">
+          <div class="flex flex-col right-0 m-auto absolute ">
+            <div class="flex flex-row">
+              <svg class="left-0  bottom-72 z-[1000] -ml-60 absolute "width="135" height="135" viewBox="0 0 198 198" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d)"><rect x="49" y="49" width="100" height="100" rx="15" fill="#18191B"/></g><path d="M115.5 98.134C116.167 98.5189 116.167 99.4811 115.5 99.866L91.5 113.722C90.8333 114.107 90 113.626 90 112.856L90 85.1436C90 84.3738 90.8333 83.8927 91.5 84.2776L115.5 98.134Z" stroke="#BA8C4B" stroke-width="2"/><defs><filter id="filter0_d" x="0" y="0" width="198" height="198" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset/><feGaussianBlur stdDeviation="24.5"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/></filter></defs></svg>
+              <div class=" group w-[315px] h-[437px] rounded-[15px] overflow-hidden right-0 mr-20 mt-40 relative">
+                <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="card1.png">
+                  <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+              </div>
+            </div>
+              <div class=" group w-[452px] h-[278px] rounded-[15px] overflow-hidden right-0  mr-20 mt-12 -ml-60 relative">
+                <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="sofa.png">
+                  <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class=" group w-[365px] h-[458px] rounded-[15px] overflow-hidden right-0 left-0 m-auto mt-60 sm:mt-80 2xl:mt-60 z-[-1] absolute">
+      <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100" src="card1.png">
+      <div class="absolute w-full h-full shadow-2xl opacity-20 transform duration-500 inset-y-full group-hover:-inset-y-0"></div>
+    </div>
+
+
+  </body>
+</html>
