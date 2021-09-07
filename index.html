@@ -21,7 +21,7 @@
 
 
   </head>
-  <body class=" bg-[#18191B]">
+  <body class=" bg-[#18191B] overflow-x-hidden">
     <div x-data="{ open: false }" class="xl:px-40 flex flex-col mx-auto md:items-center md:justify-between md:flex-row ">
       <div class="p-4 flex flex-row items-center justify-between">
         <svg class="h-12 w-auto" viewBox="0 0 71 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect width="71" height="50" fill="url(#pattern0)"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0" transform="translate(0 -0.00117647) scale(0.00980392 0.0139216)"/></pattern><image id="image0" width="102" height="72" xlink:href="data:image/png;base64,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"/></defs></svg>
@@ -405,6 +405,83 @@
       </div>
     </div>
 </div>
+
+
+<div class="w-full h-full" style="background-image:url('bgx.svg');background-repeat: no-repeat;position: absolute; z-index: -1; width:1920px; height:2445px;">
+</div>
+<div class="relative  w-full  mt-12 xl:mt-96  pt-32 mb-20 px-4 sm:px-0">
+  <div class="flex justify-center m-auto">
+    <div class="text-[40px] sm:text-[64px] text-[#BA8C4B] font-semibold">
+      Ablauf
+    </div>
+  </div>
+  <div class="flex justify-center m-auto">
+    <div class="text-[24px] text-[#6C757D] ">
+      Ihr Alltag und Ihre Zeiteinteilung sind so individuell, wie unsere Möbelstücke. Wir stellen uns auf Ihre
+    </div>
+  </div>
+  <div class="flex justify-center m-auto">
+    <div class="text-[24px] text-[#6C757D]  ">
+      persönliche Situation ein und helfen Ihnen dadurch Zeit & Geld bei der Herstellung zu sparen.
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 px-4 xl:px-24">
+  <div class="flex flex-col items-center xl:p-8  xl:mx-8 mb-8 flex-1 mb-8 md:mb-0  w-full h-full sm:flex-initial">
+      <img src="lamp.svg">          
+        <h1 class="text-white text-[24px] my-4  ">Expertise</h1>
+          <p class="text-left sm:text-center text-[#6C757D] px-8 mb-8  ">
+            Sie benötigen neue Maßmöbel und haben bereits einige Ideen dazu oder suchen einfach nur jemanden, der Ihnen bei Ihrem Möbel Projekt weiterhilft. Senden Sie uns einfach und gerne Ihre Fragen und/oder Vorstellungen.
+          </p>
+  </div>
+<div class="flex flex-col items-center xl:p-8  xl:mx-8 mb-8 flex-1 mb-8 md:mb-0  md:w-full h-full  sm:flex-initial">
+  <img src="zeit.svg">       
+      <h1 class="text-white text-[24px] my-4  ">Zeit sparen</h1>
+      <p class=" text-left sm:text-center text-[#6C757D] px-8 mb-8  ">
+        Durch gezielte Fragestellungen und einer groben<br> Vorabplanung übermitteln wir Ihnen ein rasches<br> Erstangebot.<br>
+        Sie entscheiden, ob und wie es weiter geht.            </p>
+</div>
+<div class="flex flex-col items-center xl:p-8  xl:mx-8 mb-8 flex-1 mb-8 md:mb-0  md:w-full h-full  sm:flex-initial" >
+  <img src="kurze.svg">       
+     <h1 class="text-white text-[24px] my-4  ">Kurze Lieferzeiten</h1>
+      <p class=" text-left sm:text-center text-[#6C757D] px-8 mb-8  ">
+        Nach dem Planungs- und Angebotsprozess bekommen<br> Sie von uns eine verbindliche Lieferzusage.<br>
+        Nach nur wenigen Wochen wird Ihr Traum vom<br> Maßmöbelstück Realität.          </p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- This is an example component -->
+
+  <div class='flex mt-96 pt-32'>
+      <div class='w-[1150px] p-32 -ml-4 bg-[#BA8C4B]'style="border-radius: 20px;">
+               <h1 class="mb-16 font-semibold text-[76px]">Herzschlag erhoht?</h1>
+              <p class="mb-7 text-[24px] text-[#18191B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget ultricies turpis viverra quam. Donec posuere eget ut dignissim suspendisse phasellus tincidunt nullam.</p>
+      </div>
+      <div class="flex flex-col">
+      <div class="w-full  -mt-40 -ml-20 z-[-1]"style="border-radius: 20px;">
+          <img src="kamion.svg" alt="Waiting Image" />
+      </div>
+      <button class="block  mx-auto shadow bg-[#18191B]  focus:shadow-outline focus:outline-none  py-6 px-16  text-[#BA8C4B] -mt-8 ml-32" style="z-index: 1;box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);border-radius: 20px;">Termin Vereinbaren</button>
+
+    </div>
+  </div>
+
+
+
 
 
 
